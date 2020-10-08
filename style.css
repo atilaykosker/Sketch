@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+}
+
+:root {
+  --quantity: 16;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#00f7ff, #0088f8);
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(var(--quantity), 1fr);
+  grid-template-rows: repeat(var(--quantity), 1fr);
+  height: 800px;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cell {
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.myButton {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+.reset {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
